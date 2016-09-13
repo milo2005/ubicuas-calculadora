@@ -11,18 +11,20 @@
     tools:context="com.unicauca.calculadora.MainActivity">
 
     <EditText
+        android:id="@+id/numero1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Numero 1"
+        android:hint="@string/num1"
         android:layout_marginBottom="10dp"
         />
 
     <EditText
+        android:id="@+id/numero2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Numero 2"
+        android:hint="@string/num2"
         android:layout_marginBottom="10dp"
         />
 
@@ -34,37 +36,42 @@
         >
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Sumar"
+            android:id="@+id/btnSumar"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:text="@string/btnSub"
             />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Restar"
+            android:id="@+id/btnRestar"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:text="@string/btnSub"
             />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Mul"
+            android:id="@+id/btnMul"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:text="@string/btnMul"
             />
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Div"
+            android:id="@+id/btnDiv"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:text="@string/btnDiv"
             />
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/resultado"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="00"
-        android:textSize="100sp"
+        android:text="@string/empty"
+        android:textSize="@dimen/result_size"
         />
 
 </LinearLayout>
